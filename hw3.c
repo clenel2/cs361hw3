@@ -88,9 +88,11 @@ int main() {
      int pid = fork();
      if (pid == 0) {
        //printf("I am the child!  I have pid %d. I'm gonna exec %s!\n", getpid(), argsarray1[0]);
-       sprintf(line, "/bin/%s", argsarray1[0]);
+       //sprintf(line, "/bin/%s", argsarray1[0]);
        //printf("%s\n", line);
-       execv(line, argsarray1);
+       //execv(line, argsarray1);
+       execv(argsarray1[0], argsarray1);
+
        // should only be here if exec didn't work
        printf("pid %d did not exec\n", getpid());
        exit(1); // kill child
