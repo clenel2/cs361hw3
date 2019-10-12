@@ -92,6 +92,7 @@ int main() {
      if(semi == 1) {
        pid2 = fork();
      }
+     if(pipe == 1){}
      if (pid == 0) {
        execv(argsarray1[0], argsarray1);
 
