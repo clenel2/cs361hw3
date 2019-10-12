@@ -73,11 +73,11 @@ int main() {
        word = strtok(NULL, " ");
      }  // end adding to argsarrays
 
-     // print out our array
+     /* print out our array
      int j = 0;
      for (;j < i; j++){
        printf("argsarray1[%d]: %s\n", j, argsarray1[j]);
-     }
+     }*/
      // exit shell program
      if(strcmp(argsarray1[0], "exit") == 0)
       break;
